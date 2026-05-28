@@ -4,11 +4,15 @@ body{
 
 .boti{
     background-color: rgb(44, 42, 66);
-    height: 100px;
-    width: 100px;
+    height: 35px;
+    width: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .boti h2{
 color: white;
 font-size: 15px;
 text-align: center;
+white-space: nowrap;
 }
