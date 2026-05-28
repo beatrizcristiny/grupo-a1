@@ -9,12 +9,16 @@ $hora = date("H:i:s");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Trabalho de Programção Web II</title>
+    
 </head>
 <body>
    
 <header>
-    <h2>Programação Web II — Aula Invertida — Turma A</h2>
+    <div class = "boti">
+        <h2>Programação Web II — Aula Invertida — Turma A</h2>
+    </div>
      <h1>Grupo A1 — Introdução a Scripts Lado Servidor</h1>
     <p>
         Neste trabalho vamos mostrar como o PHP funciona no servidor e como as partes de uma aplicação web se comunicam entre si.
@@ -52,20 +56,23 @@ $hora = date("H:i:s");
     <div class = "card-foot">
         <h2>Geração Dinâmica de Páginas</h2>
         <p>Aqui mostramos como o PHP consegue gerar informações em tempo real, como a data e hora atual, sem precisar editar o arquivo toda vez.</p>
-        <div class = "botao"><a href="">Ver Exemplo →</a></div>
+        <div class = "botao"><a href="pg1.php">Ver Exemplo →</a></div>
     </div>
     <div class = "card-foot">
         <h2>Arquitetura em 3 Camadas</h2>
         <p>Neste exemplo dá pra ver na prática como funciona o caminho que uma requisição faz: saindo do navegador, passando pelo servidor e chegando no PHP.</p>
-        <div class = "botao">Ver <a href="">Exemplo</a> →</div>
+        <div class = "botao"><a href="pg2.php">Ver Exemplo</a> →</div>
     </div>
     <div class = "card-foot">
         <h2>PHP Dinâmico vs HTML Estático</h2>
         <p>Comparamos o que o PHP consegue fazer com o que o HTML puro não consegue, usando uma lista de produtos como exemplo.</p>
-        <div class = "botao">Ver <a href="">Exemplo</a> →</div>
+        <div class = "botao"><a href="pg3.php">Ver Exemplo</a> →</div>
     </div>
     
         <p>Grupo A1 programação web II, página gerada em: <?= $data ?> às <?= $hora ?></p>
 </footer>
+<script>
+
+</script>
 </body>
 </html>

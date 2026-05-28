@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(5, 5, 48);
+}
+
+.boti{
+    background-color: rgb(44, 42, 66);
+    height: 100px;
+    width: 100px;
+}
+.boti h2{
+color: white;
+font-size: 15px;
+text-align: center;
+}
