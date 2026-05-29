@@ -187,3 +187,8 @@ header h2{
     padding: 50px 0px 40px 0px;
     text-align: center;
 }
+
+.botao a:hover{
+    background-color: #0f172a;
+    border: 1px solid rgb(9, 14, 39);
+}
