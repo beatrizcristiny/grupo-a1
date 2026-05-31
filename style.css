@@ -192,3 +192,18 @@ header h2{
     background-color: #0f172a;
     border: 1px solid rgb(9, 14, 39);
 }
+
+@media (max-width: 1200px) {
+    .foot-pai{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+    }
+    .card-foot{
+        padding: 10px;
+    }
+  
+    .fim{
+        padding: 20px 15p;
+    }
+}
