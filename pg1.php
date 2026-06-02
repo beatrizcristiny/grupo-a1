@@ -31,20 +31,22 @@ $dia_sem = $dias[date("w")];
     <h2>Informações geradas pelo PHP</h2>
     <div class="informacoes">
         <p>
-            Data de hoje:
+            <strong>Data de hoje:</strong>
             <?= $data ?>
         </p>
         <p>
-            Hora atual:
+            <strong>Hora atual:</strong>
             <?= $hora ?>
         </p>
         <p>
-            Dia da semana:
+            <strong>Dia da semana:</strong>
             <?= $dia_sem?>
         </p>
     </div>
     
-    <h2>Tecnologias usadas nesta aplicação</h2>
+    <div class= "h2">
+        <h2>Tecnologias usadas nesta aplicação</h2>
+    </div>
     <div class = "linguagens" >
          <li>HTML5</li>
         <li>CSS3></li>
@@ -52,11 +54,13 @@ $dia_sem = $dias[date("w")];
         <li>PHP 8+</li>
     </div>
     
-    <h2>Por que isso é importante?</h2>
-    <p>Se esta fosse uma página HTML pura, a data e hora estariam escritas no código e nunca mudariam. Com o PHP, essas informações são calculadas no servidor toda vez que alguém abre a página. Recarregue a página e veja a hora mudar!</p>
+    <div class= "pt2">
+        <h2>Por que isso é importante?</h2>
+        <p>Se esta fosse uma página HTML pura, a data e hora estariam escritas no código e nunca mudariam. Com o PHP, essas informações são calculadas no servidor toda vez que alguém abre a página. Recarregue a página e veja a hora mudar!</p>
+    </div>
 </main>
 
-<footer><a href="index.php">← Voltar para o início</a></footer>
+<div class= "botao2"><a href="index.php">← Voltar para o início</a></div>
 </body>
 </html>
 

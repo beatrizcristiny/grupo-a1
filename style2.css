@@ -28,8 +28,11 @@ header h2 {
 }
 
 .texto{
-    text-align: center;
+    text-align: left;
     color: rgb(84, 84, 84);
+    max-width: 700px;
+    margin: 0px 0px 0px 210px;
+    
 
 }
 
@@ -44,9 +47,9 @@ main h2{
     align-items: center;
     width: 500px;
     height: 160px;
-    background-color: rgb(188, 224, 255);
+    background-color: #d5d1e4;
     padding: 0px 0px 0px 30px;
-    margin: 0px 0px 0px 80px;
+    margin: 0px 0px 0px 200px;
     border-radius: 10px;
     flex-direction: column;
 }
@@ -54,4 +57,47 @@ main h2{
 .informacoes p{
     padding: 15px 0px 0px 0px;
     margin: 10px 20px 0px 0px;
+}
+.h2{
+    margin: 0px 0px 0px 60px;
+    padding: 10px 0px 0px 0px;
+}
+
+li{
+    text-align: left;
+    list-style-position: inside;
+    margin: 0px 0px 0px 220px;
+}
+
+.pt2 h2{
+    text-align: left;
+    margin: 0px 0px 0px 200px;
+    padding: 20px 0px 20px 0px;
+}
+
+.pt2 p {
+    text-align: left;
+    margin: 0px 0px 0px 200px;
+}
+
+.botao2{
+    padding: 30px 0px 0px 0px;
+    text-align: left;
+    margin: 0px 0px 0px 200px;
+    width: 300px;
+    height: 100px;
+}
+
+a{
+   background-color: rgb(0, 68, 255); 
+   padding: 10px;
+   border-radius: 50px;
+   text-decoration: none;
+   color: #ffffff;
+   border: 1px solid rgb(19, 19, 75);
+}
+
+a:hover{
+    border: 1px solid rgb(0, 102, 197);
+    background-color: rgb(0, 132, 255);
 }
