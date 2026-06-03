@@ -52,6 +52,7 @@ main h2{
     margin: 0px 0px 0px 200px;
     border-radius: 10px;
     flex-direction: column;
+    border: 1px solid black;
 }
 
 .informacoes p{
@@ -100,4 +101,24 @@ a{
 a:hover{
     border: 1px solid rgb(0, 102, 197);
     background-color: rgb(0, 132, 255);
+}
+
+
+@media (max-width: 1200px) {
+    header h1{
+        font-size: 28px;
+        text-align: left;
+        margin: 0px 0px 0px 200px;
+
+    }
+    
+    header h2{
+        font-size: 24px;
+        text-align: left;
+        padding: 0px 0px 20px 300px;
+    }
+
+    .texto{
+
+    }
 }
