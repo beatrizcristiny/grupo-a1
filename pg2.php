@@ -1,7 +1,7 @@
 <?php
-
-
-
+date_default_timezone_set('America/Sao_Paulo');
+$data = date("d/m/Y");
+$hora = date("H:i:s");
 ?>
 
 
@@ -16,88 +16,57 @@
 </head>
 <body>
     <header>
-        <h1>Grupo A1 — Arquitetura em 3 Camadas</h1>
-        <h2>Programação Web II — Exemplo 2</h2>
+        <h1>Programação Web II </h1>
+        <h2>Grupo A1 — Arquitetura em 3 Camadas</h2>
+        <p>Nesta página você consegue ver na prática como as 3 camadas de uma aplicação web funcionam juntas. Cada vez que você clica em um botão abaixo, o navegador manda um pedido para o servidor, o servidor repassa para o PHP e o PHP decide qual conteúdo mostrar na tela.</p>
         
-        <h2>Arquitetura Web em Camadas</h2>
-        
-        <a href="">Home</a>
-        <a href="">Sobre</a>
-        <a href="">Contato</a>
-        
-        
-        <div class = "pginicial">
-            <h1>Página Inicial</h1>
-            
-            <p>Bem vindo ao exemplo de arquitetura em camadas!</p>
-            
-            <p>Página atual: home</p>
-        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
     </header>
 
-
 <main>
-    <h2>As 3 Camadas desta aplicação:</h2>
+    <div class= "card-inicial">
+        <!--<?= $titulopaginainicial?>
+        <?= $textobemvindo ?>
+        Página atual: home <?= $pagina ?> -->
+    </div>
     
-    <h3>Camada 1</h3>
-    <p>
-        Cliente / Navegador
-        HTML + CSS + JS
-    </p>
     
-    ↓
+    <div class = "card-camadas2">
+            <div class = "card-inicio3">
+                <h3>Cliente</h3>
+                <h4>Navegador</h4>
+                <p>HTML · CSS · JS</p>
+            </div>
+            <p>⇄</p>
+            <div class = "card-inicio4">
+                <h3>Servidor Web</h3>
+                <h4>Apache / Nginx</h4>
     
-    <h3>Camada 2</h3>
-    <p>
-        Servidor Web
-        Apache / Nginx
-    </p>
+            </div>
+            <p>⇄</p>
+            <div class = "card-inicio5">
+                <h3>Aplicação</h3>
+                <h4>PHP/Lógica</h4>
     
-    ↓
-    
-    <h3>Camada 3</h3>
-    <p>
-        Aplicação
-        PHP + Lógica
-    </p>
+            </div>
+           </div>
 </main>
 
-
-<div>
-    <h2>Informações do Servidor (geradas pelo PHP)</h2>
-    
-    PHP Version:
-    8.3.16
-    
-    Servidor:
-    Apache/2.4.62 (Win64) OpenSSL/3.0.15 PHP/8.3.16
-    
-    Método HTTP:
-    GET
-    
-    IP do Cliente:
-    ::1
-    
-    URL acessada:
-    /grupo-a1/exemplos/02-arquitetura-camadas.php
-</div>
-
-
 <footer>
-    <h3>Como funciona?</h3>
+    <div class = "info-reais">
+    <h2>Informações reais do servidor</h2>
+    Essas informações abaixo são geradas pelo PHP em tempo real. Elas provam que o PHP está rodando no servidor e não no navegador.
+     class = "info-reais"><!--<?= $chave ?>: <?= $valor ?> --></div>
     
-    <p>
-        Quando você clica em um dos botões acima acontece o seguinte:
-        o navegador manda um pedido com a página escolhida na URL,
-        o Apache recebe esse pedido e repassa para o PHP,
-        o PHP lê o que veio na URL e decide qual conteúdo mostrar,
-        e por fim manda o HTML pronto de volta para o navegador.
-        
-        Isso é exatamente o ciclo completo das 3 camadas funcionando.
-    </p>
+    <h2>Como funciona essa página?</h2>
+    <p>Quando você clica em um dos botões de navegação acima acontece o seguinte: o seu navegador manda um pedido para o servidor com a página escolhida na URL. O Apache recebe esse pedido e repassa para o PHP processar. O PHP lê o que veio na URL usando o $_GET e decide qual título e texto mostrar. Por fim o PHP monta o HTML com o conteúdo certo e manda de volta para o navegador exibir. Esse ciclo completo é exatamente as 3 camadas funcionando juntas.</p>
     
-    
-    <div class= "botao3"><a href="">← Voltar para o início</a></div>
+    <div><a href="">← Voltar para o início</a></div>
+    Grupo A1 — Programação Web II | Página gerada em: <?= $data ?> às <?= $hora ?>
 </footer>
 </body>
 </html>
