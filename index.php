@@ -79,16 +79,5 @@ $hora = date("H:i:s");
     
         <p class = "fim">Grupo A1 programação web II, página gerada em: <?= $data ?> às <?= $hora ?></p>
 </footer>
-<script>
- document.querySelectorAll('.card-inicio').forEach(function(card){
-    card.addEventListener('mouseover', function(){
-        this.style.borderColor = '#3b82f6';
-});
-    card.addEventListener('mouseout', function(){
-        this.style.borderColor = '#334155';
-});
- });
-
-</script>
 </body>
 </html>

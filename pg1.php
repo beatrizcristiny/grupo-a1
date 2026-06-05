@@ -5,6 +5,8 @@ $hora = date("H:i:s");
 
 $dias = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
 $dia_sem = $dias[date("w")];
+
+$tecnologias = ["HTML5", "CSS3", "PHP 8+", "Apache"];
 ?>
 
 
@@ -48,10 +50,9 @@ $dia_sem = $dias[date("w")];
         <h2>Tecnologias usadas nesta aplicação</h2>
     </div>
     <div class = "linguagens" >
-         <li>HTML5</li>
-        <li>CSS3></li>
-        <li>JavaScript</li>
-        <li>PHP 8+</li>
+         <?php foreach($tecnologias as $tecn): ?>
+            <li><?= $tecn ?></li>
+            <?php endforeach; ?>
     </div>
     
     <div class= "pt2">

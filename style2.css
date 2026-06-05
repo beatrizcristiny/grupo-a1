@@ -6,9 +6,9 @@
 }
 
 body{
-    background-color: #ededed;
+    background-color:#0f172a;;
     font-family: 'Poppins', sans-serif ;
-    color: rgb(0, 0, 0);
+    color: white;
     max-width: 1100px;
     margin: 0 auto;
     
@@ -24,12 +24,15 @@ header h2 {
     text-align: center;
     font-weight: 500;
     padding: 0px 0px 20px 0px;
-    color: rgb(51, 51, 51);
+    color: #94a3b8;
 }
+
+
+
 
 .texto{
     text-align: left;
-    color: rgb(84, 84, 84);
+    color: #cbd5e1;
     max-width: 700px;
     margin: 0px 0px 0px 210px;
     
@@ -47,17 +50,18 @@ main h2{
     align-items: center;
     width: 500px;
     height: 160px;
-    background-color: #d5d1e4;
+    background-color:#1e293b;
     padding: 0px 0px 0px 30px;
     margin: 0px 0px 0px 200px;
     border-radius: 10px;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid  #334155;
 }
 
 .informacoes p{
     padding: 15px 0px 0px 0px;
     margin: 10px 20px 0px 0px;
+    color: #e2e8f0;
 }
 .h2{
     margin: 0px 0px 0px 60px;
@@ -65,10 +69,11 @@ main h2{
 }
 
 li{
-    text-align: left;
+      color: #cbd5e1;
+    margin: 10px 0px 0px 220px;
     list-style-position: inside;
-    margin: 0px 0px 0px 220px;
 }
+
 
 .pt2 h2{
     text-align: left;
@@ -79,6 +84,7 @@ li{
 .pt2 p {
     text-align: left;
     margin: 0px 0px 0px 200px;
+    color: #cbd5e1;
 }
 
 .botao2{
@@ -90,17 +96,18 @@ li{
 }
 
 a{
-   background-color: rgb(0, 68, 255); 
+   background-color: #006aff;
    padding: 10px;
    border-radius: 50px;
    text-decoration: none;
    color: #ffffff;
-   border: 1px solid rgb(19, 19, 75);
+  border: 1px solid #1d4ed8;
+  transition: 0.3s;
 }
 
 a:hover{
-    border: 1px solid rgb(0, 102, 197);
-    background-color: rgb(0, 132, 255);
+   border: 1px solid #2563eb;
+    background-color: #0052cc;
 }
 
 
