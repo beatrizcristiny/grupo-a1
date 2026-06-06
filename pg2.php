@@ -62,15 +62,15 @@ $infoServidor = [
 
 <main>
 
-    <div class="card-inicial">
-        <h2><?= $tituloPaginaInicial ?></h2>
-
-        <p><?= $textoBemVindo ?></p>
-
-        <p>
-            Página atual:
-            <strong><?= $pagina ?></strong>
-        </p>
+    <div class = "card-iniciald">
+        <div class="card-inicial">
+            <h2><?= $tituloPaginaInicial ?></h2>
+            <p><?= $textoBemVindo ?></p>
+            <p>
+                Página atual:
+                <strong><?= $pagina ?></strong>
+            </p>
+        </div>
     </div>
 
     <div class="card-camadas2">
@@ -101,26 +101,24 @@ $infoServidor = [
 
 <footer>
 
-    <div class="info-reais">
-
-        <h2>Informações reais do servidor</h2>
-
-        <p>
-            Essas informações abaixo são geradas pelo PHP em tempo real.
-            Elas provam que o PHP está rodando no servidor e não no navegador.
-        </p>
-
-        <?php
-        foreach ($infoServidor as $chave => $valor) {
-            echo "<p><strong>$chave:</strong> $valor</p>";
-        }
-        ?>
-
+    <div class = "info-reaispai">
+        <div class="info-reais">
+            <h2>Informações reais do servidor</h2>
+            <p class = "para">
+                Essas informações abaixo são geradas pelo PHP em tempo real.
+                Elas provam que o PHP está rodando no servidor e não no navegador.
+            </p>
+            <?php
+            foreach ($infoServidor as $chave => $valor) {
+                echo "<p><strong>$chave:</strong> $valor</p>";
+            }
+            ?>
+        </div>
     </div>
 
-    <h2>Como funciona essa página?</h2>
+    <h2 class= "como">Como funciona essa página?</h2>
 
-    <p>
+    <p class= "quando">
         Quando você clica em um dos botões de navegação acima acontece o seguinte:
         o seu navegador manda um pedido para o servidor com a página escolhida na URL.
         O Apache recebe esse pedido e repassa para o PHP processar.
@@ -129,13 +127,13 @@ $infoServidor = [
         Esse ciclo completo é exatamente as 3 camadas funcionando juntas.
     </p>
 
-    <div>
-        <a href="?pagina=home">← Voltar para o início</a>
+    <div class= "botao6">
+        <a href="index.php">← Voltar para o início</a>
     </div>
 
-    <p>
+    <p class ="data">
         Grupo A1 — Programação Web II |
-        Página gerada em: <?= $data ?> asr <?= $hora ?>
+        Página gerada em: <?= $data ?> as <?= $hora ?>
     </p>
 
 </footer>
