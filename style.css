@@ -255,7 +255,7 @@ header p{
 header h2{
     text-align: center;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 17px;
     margin: 0px 0px 0px -250px;
 }
 
@@ -306,7 +306,7 @@ header h2{
 .tecn{
     text-align: center;
     padding: 30px 0px 20px 0px;
-    font-weight: 600;
+    font-weight: 600px;
     font-size: 18px;
     margin: 0px 0px 0px -250px;
 }
@@ -316,7 +316,9 @@ header h2{
    flex-wrap: wrap;
    justify-content: center;
    gap: 10px;
-   margin: 10px 0;
+   margin: 1% 0px 0px 5%;
+   width: 50%;
+   
    
 }
 
@@ -346,32 +348,37 @@ header h2{
 .ex{
     text-align: center;
     padding: 20px 0px 20px 0px;
+    width: 62%;
+    
 
 }
 
 .foot-pai{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
+    margin: 0px 250px 0px 0px;
 }
 
 .card-foot{
     background-color: #1e293b;
-    width: 400px;
+    width: 20%;
     height: 270px;
     text-align: center;
     padding: 5px 0px 0px 5px;
     border-radius: 20px;
     border: 1px solid  #334155 ;
+    margin: 0px 0px 0px 0px;
 }
 .card-foot h2{
-    font-size: 20px;
-    padding: 20px 0px 10px 0px;
+    font-size: 15px;
+    padding: 20px 0px 0px 0px;
 }
 
 .card-foot p{
     padding: 20px 0px 30px 0px;
     color:  #94a3b8;
+    font-size: 10px;
 }
 
 
