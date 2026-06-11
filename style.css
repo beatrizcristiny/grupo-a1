@@ -182,6 +182,14 @@ header h2{
     text-decoration: none;
     border: 1px solid rgb(79, 155, 255);
 }
+.botao3 a{
+    background-color: #006aff;
+    padding: 5px 10px 5px 15px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 1px solid rgb(79, 155, 255);
+}
 
 .fim{
     padding: 50px 0px 40px 0px;
