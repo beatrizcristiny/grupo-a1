@@ -73,7 +73,7 @@ $hora = date("H:i:s");
         <div class = "card-foot">
             <h2>PHP Dinâmico vs HTML Estático</h2>
             <p>Comparamos o que o PHP consegue fazer com o que o HTML puro não consegue, usando uma lista de produtos como exemplo.</p>
-            <div class = "botao"><a href="pg3.php">Ver Exemplo →</a></div>
+            <div class = "botao3"><a href="pg3.php">Ver Exemplo →</a></div>
         </div>
     </div>
     

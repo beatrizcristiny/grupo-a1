@@ -362,38 +362,58 @@ header h2{
 
 .card-foot{
     background-color: #1e293b;
-    width: 20%;
+    width: 28%;
     height: 270px;
     text-align: center;
     padding: 5px 0px 0px 5px;
     border-radius: 20px;
     border: 1px solid  #334155 ;
     margin: 0px 0px 0px 0px;
+
 }
 .card-foot h2{
-    font-size: 15px;
-    padding: 20px 0px 0px 0px;
+    font-size: 12px;
+    padding: 15px 0px 0px 0px;
 }
 
 .card-foot p{
     padding: 20px 0px 30px 0px;
     color:  #94a3b8;
     font-size: 10px;
+    text-align: justify;
+}
+
+
+.botao3{
+    padding: 15px;
+}
+
+
+.botao3 a{
+    background-color: #006aff;
+    font-size: 10px;
+    padding: 0px 10px 0px 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 1px solid rgb(79, 155, 255);
+    border-radius: 10px;
 }
 
 
 .botao a{
     background-color: #006aff;
-    padding: 5px 10px 5px 15px;
-    border-radius: 20px;
+    font-size: 10px;
+    padding: 0px 10px 0px 10px;
     color: rgb(255, 255, 255);
     text-decoration: none;
     border: 1px solid rgb(79, 155, 255);
+    
 }
 
 .fim{
-    padding: 50px 0px 40px 0px;
+    padding: 50px 250px 40px 0px;
     text-align: center;
+    font-size: 10px;
 }
 
 .botao a:hover{
