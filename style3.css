@@ -228,7 +228,7 @@ text-align: justify;}
   transition: 0.3s;
 }
 
-a:hover{
+footer a:hover{
    border: 1px solid #2563eb;
     background-color: #0052cc;
 }

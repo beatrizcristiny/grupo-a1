@@ -13,7 +13,7 @@ body{
 
 h1{
     text-align: center;
-    padding: 20px 0px 15px 0px;
+    padding: 20px 250px 15px 0px;
 }
 
 .paiestadina{  
@@ -84,6 +84,7 @@ main p{
     margin: 0px 200px 0px 150px;
     text-align: justify;
     line-height: 1.4;
+     color: #a5b7d1;
 }
 
 main h3{
@@ -126,11 +127,34 @@ footer h2{
     text-align: left;
     margin: 0px 0px 0px 150px;
     padding-bottom: 30px;
+     color: #b0b9c5;
 }
 
 .hora{
     text-align: left;
-    margin: 0px 50px 0px 150px;
+    margin: 0px 50px 60px 150px;
     font-size: 16px;
     text-align: justify;
+    color: #7c899b;
+}
+.botao2{
+    padding-bottom: 40px;
+     margin: 0px 0px 0px 150px;
+}
+
+a{
+   background-color: #006aff;
+   padding: 10px;
+   border-radius: 50px;
+   text-decoration: none;
+   color: #ffffff;
+  border: 1px solid #1d4ed8;
+  transition: 0.3s;
+ 
+ 
+}
+
+a:hover{
+   border: 1px solid #2563eb;
+    background-color: #0052cc;
 }

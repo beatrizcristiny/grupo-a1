@@ -54,9 +54,9 @@ $infoServidor = [
     </p>
 
     <nav>
-        <a href="?pagina=home">Home</a>
-        <a href="?pagina=sobre">Sobre</a>
-        <a href="?pagina=contato">Contato</a>
+        <a class = "head" href="?pagina=home">Home</a>
+        <a  class = "head" href="?pagina=sobre">Sobre</a>
+        <a  class = "head" href="?pagina=contato">Contato</a>
     </nav>
 </header>
 

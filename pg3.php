@@ -115,6 +115,7 @@ $indisponiveis = 0;
     <?= date("d/m/Y H:i:s") ?>
     — Tudo isso e calculado na maquina servidora e nao no suposto cliente que for acessar a pagina :3
     </p>
+    <div class= "botao2"><a href="index.php">← Voltar para o início</a></div>
 </footer>
 
 </body>
