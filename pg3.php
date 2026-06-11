@@ -1,40 +1,104 @@
+<?php
+date_default_timezone_set("America/Sao_Paulo");
+
+$produtos = [
+    ["nome" => "Mouse", "preco" => 50.00, "estoque" => 10],
+    ["nome" => "Teclado", "preco" => 120.00, "estoque" => 5],
+    ["nome" => "Monitor", "preco" => 800.00, "estoque" => 0],
+    ["nome" => "Headset", "preco" => 150.00, "estoque" => 3],
+    ["nome" => "Webcam", "preco" => 90.00, "estoque" => 0]
+];
+
+$totalProdutos = count($produtos);
+$disponiveis = 0;
+$indisponiveis = 0;
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PHP Dinâmico vs HTML Estático</title>
 </head>
 <body>
-    PHP Dinâmico vs HTML Estático
-HTML Estático
-Conteúdo fixo no arquivo
-Não acessa banco de dados
-Não processa lógica
-Igual para todos os usuários
-Não sabe a data/hora atual
-PHP Dinâmico
-Conteúdo gerado em tempo real
-Consulta banco de dados
-Executa lógica no servidor
-Personaliza por usuário
-Gera data/hora atual
-Exemplo prático: lista de produtos gerada pelo PHP
 
-Os dados abaixo foram processados pelo PHP — em uma aplicação real, viriam de um banco de dados. O HTML estático não conseguiria fazer isso.
+<h1>PHP Dinâmico vs HTML Estático</h1>
 
-Tabela de produtos
+<h2>HTML Estático</h2>
+<ul>
+    <li>Conteúdo fixo no arquivo</li>
+    <li>Não acessa banco de dados</li>
+    <li>Não processa lógica</li>
+    <li>Igual para todos os usuários</li>
+    <li>Não sabe a data/hora atual</li>
+</ul>
 
-[PHP gera a tabela de produtos aqui]
+<h2>PHP Dinâmico</h2>
+<ul>
+    <li>Conteúdo gerado em tempo real</li>
+    <li>Consulta banco de dados</li>
+    <li>Executa lógica no servidor</li>
+    <li>Personaliza por usuário</li>
+    <li>Gera data/hora atual</li>
+</ul>
 
-Resumo gerado dinamicamente pelo PHP
+<p>
+Exemplo prático: lista de produtos gerada pelo PHP.
+</p>
 
-Total de produtos: [PHP mostra o total aqui]
+<p>
+Os dados abaixo foram processados pelo PHP — em uma aplicação real, viriam de um banco de dados.
+O HTML estático não conseguiria fazer isso.
+</p>
 
-Disponíveis: [PHP mostra a quantidade disponível aqui]
+<h2>Tabela de Produtos</h2>
 
-Indisponíveis: [PHP mostra a quantidade indisponível aqui]
+<table border="1">
+    <tr>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Estoque</th>
+        <th>Status</th>
+    </tr>
 
-Página gerada em: [PHP mostra data e hora atuais aqui] — tudo isso calculado no servidor antes de chegar ao seu navegador.
+    <?php foreach ($produtos as $produto): ?>
+
+        <?php
+        if ($produto["estoque"] > 0) {
+            $status = "Disponível";
+            $disponiveis++;
+        } else {
+            $status = "Indisponível";
+            $indisponiveis++;
+        }
+        ?>
+
+        <tr>
+            <td><?= $produto["nome"] ?></td>
+            <td>R$ <?= $produto["preco"] ?></td>
+            <td><?= $produto["estoque"] ?></td>
+            <td><?= $status ?></td>
+        </tr>
+
+    <?php endforeach; ?>
+
+</table>
+
+<h2>Resumo gerado dinamicamente pelo PHP</h2>
+
+<p>Total de produtos: <?= $totalProdutos ?></p>
+
+<p>Disponíveis: <?= $disponiveis ?></p>
+
+<p>Indisponíveis: <?= $indisponiveis ?></p>
+
+<p>
+Página gerada em:
+<?= date("d/m/Y H:i:s") ?>
+— Tudo isso e calculado na maquina servidora e nao no suposto cliente que for acessar a pagina :3
+</p>
+
 </body>
 </html>
