@@ -64,3 +64,6 @@ style.css     # Estilo da página index.php
 style2.css    # Estilo da pg1.php
 style3.css    # Estilo da pg2.php (esquema de cores das 3 camadas)
 style4.css    # Estilo da pg3.php (layout e tabela de produtos)
+
+
+Vídeo de PHP https://drive.google.com/file/d/1JmPfXQTWNeiWni2nidlM6I2YvIE8XHZe/view?usp=drivesdk
